@@ -10,8 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bit2016.datepickerexample.MainActivity">
 
-    <TextView
+    <DatePicker
+        android:id="@+id/datePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="선택한 날짜 조회" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="17dp"
+        android:text="[DateText]" />
+
 </RelativeLayout>
